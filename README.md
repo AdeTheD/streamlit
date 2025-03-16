@@ -1,7 +1,7 @@
 # My Analysis Dashboard
 
 ## 1. Cara menjalankan secara langsung
-pergi ke [**url.txt**]() lalu copy link dan jalankan menggunakan browser anda
+pergi ke [**url.txt**](https://github.com/AdeTheD/streamlit/blob/main/submission/url.txt) lalu copy link dan jalankan menggunakan browser anda
 
 ## 2. Cara menjalankan dengan cara hosted runtime atau cloud-based environment
 
