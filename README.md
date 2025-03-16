@@ -1,6 +1,9 @@
 # My Analysis Dashboard
 
-## Cara menjalankan dengan cara hosted runtime atau cloud-based environment
+## 1. Cara menjalankan secara langsung
+pergi ke **url.txt** lalu copy link dan jalankan menggunakan browser anda
+
+## 2. Cara menjalankan dengan cara hosted runtime atau cloud-based environment
 
 ### Pertama Upload data set seperti pada gambar 
 ![Screenshot 2025-03-16 113413](https://github.com/user-attachments/assets/1dd78352-7517-4fd7-8043-a1eeb22040a9)
