@@ -54,14 +54,16 @@ ax.legend()
 st.pyplot(fig)
 
 # Plot 2: Line Chart Tren Penyewaan Casual & Registered
-st.subheader(f"Tren Penyewaan Sepeda Casual & Registered di Musim {', '.join(selected_seasons)}")
-fig, ax = plt.subplots(figsize=(10, 5))
-sns.lineplot(data=filtered_data, x='season', y='casual', marker='o', label='Casual', color='blue', ax=ax)
-sns.lineplot(data=filtered_data, x='season', y='registered', marker='o', label='Registered', color='red', ax=ax)
-ax.set_ylabel("Total Penyewa")
-ax.set_xlabel("Musim")
-ax.legend()
-st.pyplot(fig)
+st.subheader(f"Perubahan Jumlah Penyewa Casual & Registered di Musim {', '.join(selected_seasons)}")
+plt.figure(figsize=(10, 5))
+sns.lineplot(data=filtered_data, x='season', y='casual_diff', label='Casual', marker='o', color='blue')
+sns.lineplot(data=filtered_data, x='season', y='registered_diff', label='Registered', marker='s', color='red')
+plt.axhline(0, linestyle='--', color='black', alpha=0.7)  # Garis referensi nol
+plt.title('Perubahan Jumlah Penyewa Casual dan Registered per Musim')
+plt.xlabel('Musim')
+plt.ylabel('Perubahan Jumlah Penyewa')
+plt.legend()
+st.pyplot(plt)
 
 # Plot 3: Pie Chart Proporsi Penyewaan
 st.subheader(f"Proporsi Penyewaan Sepeda di Musim {', '.join(selected_seasons)}")
