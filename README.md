@@ -1,18 +1,20 @@
 # My Analysis Dashboard
 
-## This Setup For LOCAL Windows Command 
+## Cara menjalankan dengan cara hosted runtime atau cloud-based environment
 
-## Setup Environment Streamlit with cmd/powershell
-```
-* Check Python version : python --version || python3 --version
-* Install Virtual Environment : pip install virtualenv
-* Create Virtual Environment in Dircetory : python -m venv nama_env
-* Activate Virtual Environment : nama_env\Scripts\activate
-```
+### Pertama Upload data set seperti pada gambar 
+![Screenshot 2025-03-16 113413](https://github.com/user-attachments/assets/1dd78352-7517-4fd7-8043-a1eeb22040a9)
 
-## Run steamlit app
-```
-Create File For Dashbord in Directory and than move to the Directory File
+### Jalankan code 
+![Screenshot 2025-03-16 113847](https://github.com/user-attachments/assets/18996d93-e5af-4b40-bade-56607edaadba)
 
-streamlit run app.py
-```
+### Lalu jalankan kode di bawahnya juga
+> !streamlit run app.py & npx localtunnel --port 8501
+
+### Jika tampila seperti pada gambar berikut
+![Screenshot 2025-03-16 113536](https://github.com/user-attachments/assets/9e73e951-1f80-4a3e-b7ac-425d48817d62)
+  - Tekan pada link pada **your url is : bla-bal-bal.lt**
+  - copy juga **External URL: http://34.141.248.97:8501** tetapi tanpa melibatkan **http://** dan **:8501** jadinya yang disalin cukup bagian **34.141.248.97** ini di gunakan untuk mengisi **tunnel password**
+  - Jika sudah menekan link pada **your url is : bla-bal-bal.lt** anda akan menjumpai tampilan pada gambar berikut
+  - ![Screenshot 2025-03-16 114737](https://github.com/user-attachments/assets/36608a62-b29f-4152-8860-fe6eeab2b41a)
+  - setelah itu masukkan **External URL: http://34.141.248.97:8501** yakni menjadi seperti ini **34.141.248.97** ke form **Tunnerl Password** lalu tekan button biru **Clik to Submit**
