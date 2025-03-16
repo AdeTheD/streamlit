@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load data
-df_day = pd.read_csv(os.path.join(os.path.dirname(__file__), "day.csv"))
+df_day = pd.read_csv("day.csv")
 
 # Mapping season
 season_mapping = {1: 'Spring', 2: 'Summer', 3: 'Fall', 4: 'Winter'}
