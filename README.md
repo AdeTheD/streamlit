@@ -14,5 +14,5 @@
 ```
 Create File For Dashbord in Directory and than move to the Directory File
 
-streamlit run dashboard.py
+streamlit run app.py
 ```
