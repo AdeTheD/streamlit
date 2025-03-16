@@ -1,10 +1,13 @@
 import streamlit as st
+from pathlib import Path
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load data
-df_day = pd.read_csv(os.path.join(os.path.dirname(__file__), "day.csv"))
+base_path = Path(__file__).parent if '__file__' in locals() else Path.cwd()
+file_path = base_path / "day.csv"
+df_day = pd.read_csv(file_path)
 
 # Mapping season
 season_mapping = {1: 'Spring', 2: 'Summer', 3: 'Fall', 4: 'Winter'}
