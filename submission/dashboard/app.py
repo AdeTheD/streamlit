@@ -53,6 +53,15 @@ ax.set_xlabel("Musim")
 ax.legend()
 st.pyplot(fig)
 
+#baru saya ubah
+st.subheader(f"Total Penyewaan Sepeda di Musim {', '.join(selected_seasons)}")
+fig, ax = plt.subplots(figsize=(10, 5))
+sns.barplot(data=filtered_data, x='season', y='cnt', palette='coolwarm', ax=ax)
+ax.set_title("Total Penyewaan Sepeda per Musim")
+ax.set_xlabel("Musim")
+ax.set_ylabel("Jumlah Penyewaan")
+st.pyplot(fig)
+
 # Plot 2: Line Chart Tren Penyewaan Casual & Registered
 st.subheader(f"Perubahan Jumlah Penyewa Casual & Registered di Musim {', '.join(selected_seasons)}")
 plt.figure(figsize=(10, 5))
