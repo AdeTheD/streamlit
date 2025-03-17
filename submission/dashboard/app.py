@@ -43,17 +43,6 @@ st.subheader(f"Data Penyewaan Sepeda untuk Musim {', '.join(selected_seasons)}")
 st.dataframe(filtered_data)
 
 # Plot 1: Bar Chart Perubahan Casual & Registered
-st.subheader(f"Perubahan Penyewaan Casual & Registered di Musim {', '.join(selected_seasons)}")
-fig, ax = plt.subplots(figsize=(10, 5))
-sns.barplot(data=filtered_data, x='season', y='casual_diff', color='blue', label='Casual Diff', ax=ax)
-sns.barplot(data=filtered_data, x='season', y='registered_diff', color='red', label='Registered Diff', ax=ax)
-ax.axhline(0, color='black', linestyle='--')
-ax.set_ylabel("Perubahan Jumlah Penyewa")
-ax.set_xlabel("Musim")
-ax.legend()
-st.pyplot(fig)
-
-#baru saya ubah
 st.subheader(f"Total Penyewaan Sepeda di Musim {', '.join(selected_seasons)}")
 fig, ax = plt.subplots(figsize=(10, 5))
 sns.barplot(data=filtered_data, x='season', y='cnt', palette='coolwarm', ax=ax)
